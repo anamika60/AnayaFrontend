@@ -94,10 +94,15 @@ const categories = {
 const marketingCategories = {
   SOCIAL: [
     {
+      // title: "Social Media Marketing",
+      // href: "/digital-marketing",
+      // description: "Master social media platforms to grow your brand presence.",
+      // icon: <Share2 className="h-4 w-4" />,
+
       title: "Social Media Marketing",
       href: "/digital-marketing",
       description: "Master social media platforms to grow your brand presence.",
-      icon: <Share2 className="h-4 w-4" />,
+      icon: <Share2 className="h-4 w-4" />
     },
     {
       title: "Content Marketing",
@@ -107,11 +112,18 @@ const marketingCategories = {
     },
   ],
   SEO: [
+    // {
+    //   title: "Search Engine Optimization",
+    //   href: "/digital-marketing",
+    //   description: "Optimize your website for better search engine rankings.",
+    //   icon: <Search className="h-4 w-4" />,
+    // },
     {
       title: "Search Engine Optimization",
       href: "/digital-marketing",
-      description: "Optimize your website for better search engine rankings.",
-      icon: <Search className="h-4 w-4" />,
+      description: "optimize your website for better search engine rankings.",
+      icon: <Search className="h-4 w-4"/>
+
     },
     {
       title: "Email Marketing",
