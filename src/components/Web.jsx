@@ -2,6 +2,7 @@ import { HighlightText } from "./HighlightText";
 import BlurIn from "./ui/blur-in";
 import { FadeText } from "./ui/fade-text";
 import WordPullUp from "./ui/word-pull-up";
+
 import {
   Code,
   Component,
@@ -11,6 +12,9 @@ import {
   Server,
 } from "lucide-react";
 import { FlowSection } from "./FlowSection";
+import Footer from "@/common/Footer";
+import { Business } from "./Business";
+import { Reviews } from "./Reviews";
 
 export const Web = () => {
   const sections = [
@@ -20,6 +24,7 @@ export const Web = () => {
       icon: Code,
       description:
         "Accelerate your web development process with our comprehensive frontend tools, designed to create responsive and interactive user interfaces.",
+      subDescriptions: ["Mern Stack", "Reacts", "Nodejs", "Deveops", "Nextjs"],
     },
     {
       title: "Backend Development Frameworks",
@@ -27,6 +32,7 @@ export const Web = () => {
       icon: Server,
       description:
         "Leverage powerful backend frameworks to build scalable and efficient server-side applications, handling business logic and database integration seamlessly.",
+      subDescriptions: ["Express.js", "GraphQL", "REST APIs", "Authentication", "Security"],
     },
     {
       title: "Android Development Solutions",
@@ -34,6 +40,7 @@ export const Web = () => {
       icon: FolderCode,
       description:
         "Create cutting-edge mobile applications for Android with our development tools, offering streamlined workflows for faster deployment.",
+      subDescriptions: ["Kotlin", "Java", "Android SDK", "Gradle"],
     },
     {
       title: "Database Management Systems",
@@ -41,15 +48,15 @@ export const Web = () => {
       icon: Database,
       description:
         "Manage, organize, and retrieve data efficiently with our database management systems, ensuring data integrity and scalability for your applications.",
+      subDescriptions: ["MongoDB", "PostgreSQL", "MySQL", "Redis"],
     },
     {
       title: "Software Design Patterns",
-
       img: "https://gitcs-brain.vercel.app/assets/charts-QbmgwRPr.svg",
-      
       icon: Component,
       description:
         "Utilize proven software design patterns to architect robust and maintainable applications, ensuring code reusability and best practices.",
+      subDescriptions: ["Singleton", "Factory", "Observer", "Decorator"],
     },
     {
       title: "Version Control & Collaboration",
@@ -57,6 +64,7 @@ export const Web = () => {
       icon: GitBranch,
       description:
         "Improve team collaboration with our version control tools, allowing for seamless integration and conflict resolution in shared projects.",
+      subDescriptions: ["Git", "GitHub", "Bitbucket", "Continuous Integration"],
     },
   ];
 
@@ -90,18 +98,19 @@ export const Web = () => {
             src="https://gitcs-brain.vercel.app/assets/undraw_job_offers_re_634p-CTwllE8b.svg"
             alt="Software Solutions"
             className="md:w-1/2 w-96"
+        
           />
         </div>
       </div>
 
-      <div className="flex justify-center flex-col gap-8 items-center p-9">
-        <h1 className="text-center text-4xl font-bold md:text-6xl ">
+      <div className=" flex justify-center flex-col gap-8 items-center p-9">
+        <h1 className="text-center text-4xl font-bold md:text-6xl">
           What Brain Brings To The Table
         </h1>
 
         <HighlightText text="Boost Your Productivity" />
 
-        <div className="grid md:w-[80%] lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+        <div className="grid md:w-[80%] lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 ">
           {sections.map((data, index) => (
             <div
               key={index}
@@ -114,7 +123,6 @@ export const Web = () => {
           ))}
         </div>
 
-     
 
         {sections.map((section, index) => (
           <FlowSection
@@ -124,9 +132,22 @@ export const Web = () => {
             color="#C2410C"
             img={section.img}
             description={section.description}
+            subDescriptions={section.subDescriptions}
           />
         ))}
+
+
+        
       </div>
+
+      <Reviews/>
+      <div>
+
+      <Business/>
+      <Footer/>
+      </div>
+
+
     </div>
   );
 };

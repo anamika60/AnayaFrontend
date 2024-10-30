@@ -19,58 +19,59 @@ export const Reviews = () => {
     {
       text: "As a seasoned designer always on the lookout for innovative tools, Framer.com instantly grabbed my attention.",
       imageSrc: avatar1,
-      name: "Jamie Rivera",
-      username: "@jamietechguru00",
+      name: "Aarav Mehta",
+      username: "@aaravtechguru",
     },
     {
       text: "Our team's productivity has skyrocketed since we started using this tool.",
       imageSrc: avatar2,
-      name: "Josh Smith",
-      username: "@jjsmith",
+      name: "Rohan Sharma",
+      username: "@rohan_smith",
     },
     {
       text: "This app has completely transformed how I manage my projects and deadlines.",
       imageSrc: avatar3,
-      name: "Morgan Lee",
-      username: "@morganleewhiz",
+      name: "Ishita Singh",
+      username: "@ishitasingh",
     },
     {
       text: "I was amazed at how quickly we were able to integrate this app into our workflow.",
       imageSrc: avatar4,
-      name: "Casey Jordan",
-      username: "@caseyj",
+      name: "Aditya Kumar",
+      username: "@adityak",
     },
     {
       text: "Planning and executing events has never been easier. This app helps me keep track of all the moving parts, ensuring nothing slips through the cracks.",
       imageSrc: avatar5,
-      name: "Taylor Kim",
-      username: "@taylorkimm",
+      name: "Tanvi Patel",
+      username: "@tanvipatel",
     },
     {
       text: "The customizability and integration capabilities of this app are top-notch.",
       imageSrc: avatar6,
-      name: "Riley Smith",
-      username: "@rileysmith1",
+      name: "Riya Verma",
+      username: "@riyaverma1",
     },
     {
       text: "Adopting this app for our team has streamlined our project management and improved communication across the board.",
       imageSrc: avatar7,
-      name: "Jordan Patels",
-      username: "@jpatelsdesign",
+      name: "Kabir Malhotra",
+      username: "@kabirmalhotra",
     },
     {
       text: "With this app, we can easily assign tasks, track progress, and manage documents all in one place.",
       imageSrc: avatar8,
-      name: "Sam Dawson",
-      username: "@dawsontechtips",
+      name: "Devansh Joshi",
+      username: "@devanshjoshi",
     },
     {
       text: "Its user-friendly interface and robust features support our diverse needs.",
       imageSrc: avatar9,
-      name: "Casey Harper",
-      username: "@casey09",
+      name: "Aanya Kapoor",
+      username: "@aanyakapoor",
     },
   ];
+  
 
   const firstColumn = testimonials.slice(0, 3);
   const secondColumn = testimonials.slice(3, 6);

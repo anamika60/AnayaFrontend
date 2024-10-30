@@ -7,6 +7,7 @@ export const FlowSection = ({
   description,
   index,
   color,
+  subDescriptions = [], // Default to an empty array
 }) => {
   return (
     <>
@@ -33,18 +34,19 @@ export const FlowSection = ({
             </p>
           </BoxReveal>
 
-          {/* <ul className="flex flex-col gap-2 items-start">
-            {[...Array(5)].map((_, idx) => (
+
+          <ul className="flex flex-col gap-2 items-start">
+            {subDescriptions.map((subDesc, idx) => (
               <BoxReveal key={idx} duration={0.7} boxColor={color}>
                 <div className="flex gap-3 items-center break-words flex-wrap">
                   <div className="bg-green-500/10 p-2 rounded-full">
                     <Check size={10} />
                   </div>
-                  <li>Employee Database</li>
+                  <li className="text-md opacity-70">{subDesc}</li>
                 </div>
               </BoxReveal>
             ))}
-          </ul> */}
+          </ul>
         </div>
       </section>
       <hr className="w-full bg-black h-[1px]" />

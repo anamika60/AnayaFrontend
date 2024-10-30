@@ -4,7 +4,7 @@ import { CreditCard } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <nav className="sticky z-50 top-0 backdrop-blur-3xl shadow-sm">
+    <nav className="sticky z-50 top-0 backdrop-blur-lg shadow-sm">
       <div className="max-w-[94%] mx-auto p-4 flex justify-between items-center">
         <Link to="/" className="text-3xl font-bold tracking-tight">
           AnanyaSoftware
