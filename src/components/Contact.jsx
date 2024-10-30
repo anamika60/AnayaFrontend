@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MailPlus, Nfc, Zap } from "lucide-react";
+import Footer from "@/common/Footer";
 
 export const Contact = () => {
   const [message, setMessage] = useState("");
@@ -10,7 +11,7 @@ export const Contact = () => {
 
   return (
     <div className="flex flex-col gap-5 w-full min-h-screen">
-    <div className=" bg-gradient-to-b from-white to-[#D2DCFF]  w-full flex flex-col justify-center  md:h-[800px] ">
+    <div className=" bg-gradient-to-b from-white to-[#D2DCFF]  w-full flex flex-col justify-center  md:h-[1350px] ">
       <div className="flex justify-between lg:flex-row flex-col items-center md:w-[85%] w-full gap-5 mx-auto pt-8 pb-24">
 
       <div className=" w-full flex justify-center items-center gap-5 flex-col" id="contact">
@@ -76,6 +77,9 @@ export const Contact = () => {
             className="md:w-1/2 w-96"
           />
         </div>
+
+      <Footer/>
+     
       </div>
     </div>
   );
