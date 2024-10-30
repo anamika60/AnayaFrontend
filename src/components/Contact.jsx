@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MailPlus, Nfc, Zap } from "lucide-react";
+import { MailPlus, Nfc, Send, Zap } from "lucide-react";
 import Footer from "@/common/Footer";
 
 export const Contact = () => {
@@ -63,9 +63,10 @@ export const Contact = () => {
                     value={message}
                     onChange={handleMessageChange}
                 ></textarea>
-                <button className="flex justify-center items-center gap-3 boxshadowbtn">
-                    <Nfc />
-                    Contact
+                <button className="flex justify-center text-white bg-blue-800 items-center gap-3 boxshadowbtn">
+                    
+                    <Send />
+                    SUBMIT
                 </button>
             </form>
         </div>

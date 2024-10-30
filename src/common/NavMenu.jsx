@@ -32,13 +32,13 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const categories = {
-  WEB: [
+export const categories = {
+  "Full Stack Development": [
     {
       title: "Frontend Development",
       href: "/web",
       description:
-        "Build interactive user interfaces with HTML, CSS, and JavaScript.",
+        "Build interactive user interfaces with HTML, Tailwind CSS, JavaScript, Reactjs , Nextjs",
       icon: <Computer className="h-4 w-4" />,
     },
     {
@@ -97,18 +97,13 @@ const categories = {
   ],
 };
 
-const marketingCategories = {
-  SOCIAL: [
+export const marketingCategories = {
+  "SOCIAL MEDIA PROMOTION": [
     {
-      // title: "Social Media Marketing",
-      // href: "/digital-marketing",
-      // description: "Master social media platforms to grow your brand presence.",
-      // icon: <Share2 className="h-4 w-4" />,
-
       title: "Social Media Marketing",
       href: "/digital-marketing",
       description: "Master social media platforms to grow your brand presence.",
-      icon: <Share2 className="h-4 w-4" />
+      icon: <Share2 className="h-4 w-4" />,
     },
     {
       title: "Content Marketing",
@@ -118,19 +113,12 @@ const marketingCategories = {
       icon: <PenTool className="h-4 w-4" />,
     },
   ],
-  SEO: [
-    // {
-    //   title: "Search Engine Optimization",
-    //   href: "/digital-marketing",
-    //   description: "Optimize your website for better search engine rankings.",
-    //   icon: <Search className="h-4 w-4" />,
-    // },
+  "PAID PROMOTION": [
     {
       title: "Search Engine Optimization",
       href: "/digital-marketing",
-      description: "optimize your website for better search engine rankings.",
-      icon: <Search className="h-4 w-4"/>
-
+      description: "Optimize your website for better search engine rankings.",
+      icon: <Search className="h-4 w-4" />,
     },
     {
       title: "Email Marketing",
@@ -139,7 +127,7 @@ const marketingCategories = {
       icon: <Mail className="h-4 w-4" />,
     },
   ],
-  PAID: [
+  "ADVERTISING WITH META": [
     {
       title: "PPC Advertising",
       href: "/digital-marketing",
@@ -154,7 +142,7 @@ const marketingCategories = {
       icon: <Laptop className="h-4 w-4" />,
     },
   ],
-  ANALYTICS: [
+  "DIGITAL ADVERTISING CAMPAIGN": [
     {
       title: "Marketing Analytics",
       href: "/digital-marketing",
@@ -170,8 +158,9 @@ const marketingCategories = {
   ],
 };
 
-const educationCategories = {
-  TECH: [
+
+export const educationCategories = {
+  TECHNICAL: [
     {
       title: "Programming Fundamentals",
       href: "/education",
@@ -185,7 +174,7 @@ const educationCategories = {
       icon: <Brain className="h-4 w-4" />,
     },
   ],
-  LANGUAGES: [
+  MARKETING: [
     {
       title: "Language Learning",
       href: "/education",
@@ -199,21 +188,21 @@ const educationCategories = {
       icon: <BookOpen className="h-4 w-4" />,
     },
   ],
-  BUSINESS: [
+  "GRAPHIC DESIGN": [
     {
-      title: "Business Management",
+      title: "Canva",
       href: "/education",
       description: "Learn essential business management and leadership skills.",
       icon: <Briefcase className="h-4 w-4" />,
     },
     {
-      title: "Digital Marketing",
+      title: "Figma",
       href: "/education",
       description: "Master modern digital marketing strategies and tools.",
       icon: <Share2 className="h-4 w-4" />,
     },
   ],
-  CREATIVE: [
+  SEO: [
     {
       title: "Graphic Design",
       href: "/education",
@@ -231,11 +220,11 @@ const educationCategories = {
 };
 
 const NavMenu = () => {
-  const [activeCategory, setActiveCategory] = useState("WEB");
+  const [activeCategory, setActiveCategory] = useState("Full Stack Development");
   const [activeMarketingCategory, setActiveMarketingCategory] =
-    useState("SOCIAL");
+    useState("SOCIAL MEDIA PROMOTION");
   const [activeEducationCategory, setActiveEducationCategory] =
-    useState("TECH");
+    useState("TECHNICAL");
 
   return (
     <NavigationMenu>

@@ -5,6 +5,9 @@ import { BodyContent } from "./BodyContent";
 import { Reviews } from "./Reviews";
 import { Business } from "./Business";
 import Footer from "@/common/Footer";
+import { Link } from "react-router-dom";
+import { Modal, ModalBody, ModalContent, ModalTrigger } from "./ui/animated-modal";
+import { EnquiryForm } from "./EnquiryForm";
 
 export default function Body() {
   return (
@@ -18,17 +21,19 @@ export default function Body() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <motion.h1
-                className="text-6xl font-bold text-center tracking-tight"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.2, duration: 0.8 }}
-              >
-                Unlock the
-                <br /> <span className="text-[#3FEDBC]">Power</span> of
-                Knowledge
-                <br /> <TypingAnimation />
-              </motion.h1>
+              <CoolMode>
+                <motion.h1
+                  className="text-6xl font-bold text-center tracking-tight"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.2, duration: 0.8 }}
+                >
+                  Unlock the
+                  <br /> <span className="text-[#3FEDBC]">Power</span> of
+                  Knowledge
+                  <br /> <TypingAnimation />
+                </motion.h1>
+              </CoolMode>
 
               <motion.div
                 className="items-center justify-center flex"
@@ -36,15 +41,27 @@ export default function Body() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
               >
-                <CoolMode>
-                  <motion.button
-                    className="mt-8 mb-24 bg-black text-white py-4 px-6 rounded-full"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    Get Started &rarr;
-                  </motion.button>
-                </CoolMode>
+                {/* <Modal>
+                  <ModalTrigger className="mt-8 mb-24 bg-black text-white py-4 px-6 rounded-full flex justify-center group/modal-btn">
+                    <span className="group-hover/modal-btn:translate-x-40 text-base text-center transition duration-500">
+                      Get Started &rarr;
+                    </span>
+                    <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
+                      ✈️
+                    </div>
+                  </ModalTrigger>
+                  <ModalBody>
+                    <ModalContent>
+                    <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center mb-8">
+                    <EnquiryForm/>
+                    </h4>
+                    </ModalContent>
+                  </ModalBody>
+                </Modal> */}
+                <button
+                className="mt-8 mb-24 bg-black text-white py-4 px-6 rounded-full">
+                Get Started &rarr;
+                </button>
               </motion.div>
             </motion.div>
 
@@ -57,7 +74,6 @@ export default function Body() {
               transition={{ delay: 0.4, duration: 0.8 }}
             />
           </div>
-          
         </div>
       </div>
 
